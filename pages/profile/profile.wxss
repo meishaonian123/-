@@ -1,0 +1,16 @@
+/* pages/profile/profile.wxss */
+.avatar{
+    background-color: #f60;
+    height: 420rpx;
+    width: 100%;
+}
+ .avatar image {
+  height: 200rpx;
+  width: 200rpx;
+  border-radius: 50%;
+  border:10rpx solid rgba(0, 0, 0, .1);
+
+}
+page{
+  background-color: #ddd;
+}

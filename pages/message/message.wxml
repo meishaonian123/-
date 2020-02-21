@@ -1,0 +1,8 @@
+<!--pages/message/message.wxml-->
+<view class="card">
+    <text class="card-title">标题1111</text>
+    <text class="card-date">2020-2-20</text>
+    <image src=https://img1.360buyimg.com/da/jfs/t13867/11/1412752337/201722/560ed61/5a1fdc11N5e975e98.jpg" mode="aspectFill"></image>
+    <text class="card-desc">越努力越幸运</text>
+    <text class="card-read arrow">查看详情</text>
+</view>

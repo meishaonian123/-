@@ -1,0 +1,28 @@
+<!--pages/profile/profile.wxml-->
+<!-- <text>pages/profile/profile.wxml</text> -->
+<view class="avatar center">
+   <image src="../../assets/images/avatar.png" mode="aspectFill"></image>
+</view>
+<view class="divider"></view>
+
+<!-- 个人资料 -->
+<view class="cell ">
+
+  <navigator class="cell-item arrow">
+      <text>个人资料</text>
+  </navigator>
+    <navigator class="cell-item arrow">
+      <text>我的优惠券</text>
+  </navigator>
+  <view class="divider"></view>
+     <navigator class="cell-item arrow">
+      <text>常见问题</text>
+  </navigator>
+  <navigator class="cell-item arrow">
+      <text>使用条款</text>
+  </navigator>
+  <view class="divider"></view>
+   <navigator class="cell-item arrow">
+      <text>设置</text>
+  </navigator>
+</view>
