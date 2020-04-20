@@ -1,6 +1,5 @@
 /**index.wxss**/
-.slider,
-.slider swiper {
+swiper {
   height: 190px;
 }
 
@@ -15,11 +14,11 @@
   width: 80rpx;
   height: 80rpx;
 }
-.index-nav {
+/* .index-nav {
   display: flex;
   flex-wrap: wrap; 
-}
-.index-nav .nav-item {
+} */
+/* .index-nav .nav-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,25 +27,46 @@
   height: 200rpx;
   font-size: 14px;
   border-bottom: 1rpx solid #f00;
-  position: relative;
   background-color: #fff;
-  /* box-sizing: border-box; */
+
 }
 
 .index-nav .nav-item:nth-child(3n)::after{
   width: 0;
+} */
+.index-nav {
+  display: flex;
+  flex-wrap: wrap;
 }
+ .index-nav .nav-item {
+   width:33.33%; 
+   height: 200rpx;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-size: 14px;
+   border-bottom: 1rpx solid #f00;
+
+ }
 /* 首页分区入口 */
 .index-enter {
     display: flex;
     padding: 20rpx 25rpx;
+    justify-content: space-around;
 }
 
 .index-enter .enter-item {
-    width: 50%;
+    /* width: 50%; */
     display: flex;
     justify-content: center;
 }
+
+/* .index-enter {
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx 30rpx;
+} */
 
 .index-enter .enter-item image {
     width: 320rpx;

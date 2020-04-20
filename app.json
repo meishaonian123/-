@@ -4,14 +4,16 @@
     "pages/message/message",
     "pages/profile/profile",
     "pages/contact/contact",
-    "pages/shopList/shopList"
+    "pages/shopList/shopList",
+    "pages/map/map"
+    
     
 
  
     
   ],
   "window": {
-    "backgroundTextStyle": "light",
+    "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#f60",
     "navigationBarTitleText": "本地宝",
     "navigationBarTextStyle": "black"
@@ -19,9 +21,8 @@
   },
     "tabBar": {
       "color": "#999",
-      "selectedColor": "#333",
-      "borderStyle": "black",
-      "position": "bottom",
+      "selectedColor": "#f10f10",
+      "borderStyle": "white",
       "list": [
         {
           "pagePath": "pages/index/index",

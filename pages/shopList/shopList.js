@@ -14,6 +14,7 @@ Page({
 
   // 加载请求函数抽离
   loadMore: function(){
+    
     wx.request({
       url: 'https://locally.uieee.com/categories/' + this.data.catId + '/shops',
       data: {
@@ -25,7 +26,7 @@ Page({
       dataType: 'json',
       responseType: 'text',
       success: (res) => {
-        // console.log(res)
+        console.log(res)
         // console.log(res.data.length)
         if (!this.data.hasMore)
         {
@@ -39,18 +40,19 @@ Page({
           return
         }else{
           wx.showNavigationBarLoading()
-          // wx.showToast(
-          //   {
-          //     title: '成功',
-          //     icon: 'success',
-          //     image:'../../assets/icons/grid-01.png',
-          //     duration:1000
-          //   }
-          // )
+          wx.showToast(
+            {
+              title: '成功',
+              icon: 'success',
+              image:'../../assets/icons/grid-01.png',
+              duration:1000
+            }
+          )
           // wx.showLoading({
           //   title: '加载中',
           // })
-          var count = parseInt(res.header['X-Total-Count']);
+          console.log(res.header['x-total-count'] - 0);
+          var count = parseInt(res.header['x-total-count']);
           // 2.4 用于判断比较是否还有更多数据
           var flag = this.data.pageIndex * this.data.pageSize < count;
           var newList = []
@@ -117,6 +119,22 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
+    // wx.showModal({
+    //   title: '提示',
+    //   content: '这是一个模态弹窗',
+    //   success(res) {
+    //     if (res.confirm) {
+    //       console.log('用户点击确定')
+    //       wx.switchTab({
+    //         url: '../index/index'
+    //       })
+    //     } else if (res.cancel) {
+    //       console.log('用户点击取消')
+    //     }
+    //   }
+    // })
+   
+    
     console.log("下拉")
     this.setData({
       hasMore:true,

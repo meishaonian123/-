@@ -7,14 +7,30 @@ App({
   /**
    * 当小程序初始化完成时，会触发 onLaunch（全局只触发一次）
    */
-  onLaunch: function () {
+  onLaunch: function() {
     // console.log("A1：全局---当小程序初始化完成时");
+
+
+    wx.showTabBarRedDot({
+        index: 1
+        // success: res => {
+        //   console.log(res);
+        // }
+      }),
+      wx.showTabBar({
+        aniamtion: true
+      }),
+      wx.setTabBarBadge({
+        index: 1,
+        text: '1'
+      })
+
   },
 
   /**
    * 当小程序启动，或从后台进入前台显示，会触发 onShow
    */
-  onShow: function (options) {
+  onShow: function(options) {
     // console.log(options);
     // options.scene 可以识别用户到底是通过什么方式进入我们的小程序。
     // console.log("B1：全局---当小程序启动，或从后台进入前台显示");
@@ -24,14 +40,14 @@ App({
   /**
    * 当小程序从前台进入后台，会触发 onHide
    */
-  onHide: function () {
+  onHide: function() {
     // console.log("C1：全局---当小程序从前台进入后台");
   },
 
   /**
    * 当小程序发生脚本错误，或者 api 调用失败时，会触发 onError 并带上错误信息
    */
-  onError: function (msg) {
+  onError: function(msg) {
 
   }
 })

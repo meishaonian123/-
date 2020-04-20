@@ -1,27 +1,23 @@
-/* pages/shopList/shopList.wxss */
+
 .shop {
   display: flex;
-  /* justify-content: space-between; */
+  padding: 20rpx;
   border-bottom: 1rpx solid #ccc;
   position: relative;
-  padding: 20rpx;
-  /* align-items: center; */
 }
-.shop-img {
-    width:160rpx;
-    height:160rpx;
+.shop .shop-img{
+    width: 160rpx;
+    height: 160rpx;
     margin-right: 20rpx;
 }
-.shopinfo{
+.shop .shopinfo {
   width: 520rpx;
   display: flex;
   flex-direction: column;
   line-height: 1.5;
-}
-.shopinfo{
   font-size: 12px;
 }
-.shop-title{
+.shop-title {
   font-size: 18px;
   color: #333;
   width: 390rpx;
